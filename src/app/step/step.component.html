@@ -1,0 +1,12 @@
+<section class="step">
+    <h2 class="step__name title">From The First Step</h2>
+    <div class="step__content">
+        <div class="step__conteiner" *ngFor="let step of data">
+            <div class="step__img__body">
+                <img [src]="step.img" alt="">
+            </div>
+            <h3>{{step.h3}}</h3>
+            <p>{{step.p}}</p>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,12 @@
+<section class="gallery" id="gallery">
+    <h2 class="title">Gallery</h2>
+    <div class="gallery__content">
+        <div class="gallery__chevron" (click)="nextPhoto(false)"><img src="assets/gallery/chevron.png" alt=""></div>
+        <div class="gallery__text">
+            <h3>Each fence seems to be already created for you.</h3>
+            <p>Everything for the comfort of your home</p>
+        </div>
+        <img [src]="photo" alt="" class="gallery__photo">
+        <div class="gallery__chevron" (click)="nextPhoto(true)"><img src="assets/gallery/chevron.png" alt=""></div>
+    </div>
+</section>

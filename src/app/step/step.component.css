@@ -1,0 +1,101 @@
+.step__name{
+    font-weight: 700;
+    font-size: 46px;
+    margin-bottom: 80px;
+}
+
+.step{
+    padding-top: 100px;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding-left: 3000px;
+    margin-left: -3000px;
+    padding-right: 3000px;
+    margin-right: -3000px;
+    /* padding-top: 3000px;
+    margin-top: -3000px; */
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+
+.step__img__body{
+    width: 90px;
+    height: 90px;
+    background: #8bb752;
+    border-radius: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto 0 auto;  
+    transition: 1s;
+
+}
+
+.step__img__body img{
+    width: 50px;
+    height: 50px;
+}
+
+
+.step__conteiner{
+    width: 25%;
+    max-width: 370px;
+    height: 435px;
+    background: #2d2d2d;
+    border-radius: 15px;
+    transition: 1s;
+    padding: 0 20px;
+}
+
+.step__conteiner h3{
+    color: #8bb752;
+    transition: 1s;
+    font-weight: 500;
+    font-size: 33px;
+    margin-top: 45px;
+}
+.step__conteiner p{
+    color: #fff;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top: 45px;
+}
+
+.step__content{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 50px;
+}
+
+.step__conteiner:hover{
+    background: #000;
+}
+
+.step__conteiner:hover .step__img__body{
+    background: #ffe149;
+}
+
+.step__conteiner:hover h3{
+    color: #ffe149;
+}
+
+@media only screen
+  and (min-device-width: 786px)
+  and (max-device-width: 1023px){
+    .step__conteiner{
+        height: 375px;
+    }
+
+  }
+
+  @media only screen
+  and (max-device-width: 785px){
+    .step__content{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .step__conteiner{
+        width: 80%;
+        margin: 0 auto 20px auto;
+    }
+}

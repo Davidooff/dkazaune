@@ -1,0 +1,48 @@
+.call{
+    padding-top: 100px;
+    padding-left: 3000px;
+    margin-left: -3000px;
+    padding-right: 3000px;
+    margin-right: -3000px;
+    padding-bottom: 50px;
+    background: #1b2024;
+    color: white;
+}
+
+.call input, .call textarea{
+    background: transparent;
+    color: white;
+    border: 1.5px solid white;
+    width: calc(100% - 20px);
+    height: 80px;
+    font-size: 23px;
+    margin: 25px 0;
+    padding: 10px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.row input{
+    width: 46%;
+}
+
+.submit{
+    width: 100% !important;
+}
+
+@media only screen and (max-device-width: 1023px){
+    .call input, .call textarea{
+        height: 50px;
+    }
+}
+
+@media only screen and (max-device-width: 683px){
+    .row input{
+        width: calc(100% - 20px);;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
